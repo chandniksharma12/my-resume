@@ -1,0 +1,1475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chandni Sharma - World-Class Graphic Designer with 3+ Years Experience - Premium Logo Design, Branding & Visual Storytelling">
+    <meta name="keywords" content="graphic designer, logo design, branding, typography, digital design, print design, chandni sharma, premium design">
+    <meta name="author" content="Chandni Sharma">
+    <title>Chandni Sharma - World-Class Graphic Designer | 3+ Years Experience</title>
+    
+    <style>
+        /* Import Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+        
+        /* CSS Variables - Inspired by the glassmorphism design */
+        :root {
+            /* Perfect Color Palette - No Conflicts */
+            --primary-blue: #4F46E5;
+            --secondary-blue: #3B82F6;
+            --accent-purple: #8B5CF6;
+            --light-blue: #E0F2FE;
+            --white: #FFFFFF;
+            --text-dark: #1E293B;
+            --text-medium: #475569;
+            --text-light: #64748B;
+            --text-muted: #94A3B8;
+            
+            /* Background Colors */
+            --bg-gradient: linear-gradient(135deg, #E0F2FE 0%, #DDD6FE 50%, #F3E8FF 100%);
+            --bg-glass: rgba(255, 255, 255, 0.25);
+            --bg-glass-strong: rgba(255, 255, 255, 0.4);
+            --bg-card: rgba(255, 255, 255, 0.8);
+            
+            /* Glassmorphism Effects */
+            --glass-border: rgba(255, 255, 255, 0.3);
+            --glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            --glass-backdrop: blur(20px);
+            
+            /* Shadows */
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+            --shadow-glass: 0 8px 32px 0 rgba(79, 70, 229, 0.15);
+            
+            /* Border Radius */
+            --radius-sm: 8px;
+            --radius-md: 12px;
+            --radius-lg: 16px;
+            --radius-xl: 20px;
+            --radius-2xl: 24px;
+            --radius-full: 9999px;
+            
+            /* Transitions */
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-slow: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            
+            /* Typography */
+            --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            --font-display: 'Poppins', sans-serif;
+            
+            /* Font Sizes */
+            --text-xs: 0.75rem;
+            --text-sm: 0.875rem;
+            --text-base: 1rem;
+            --text-lg: 1.125rem;
+            --text-xl: 1.25rem;
+            --text-2xl: 1.5rem;
+            --text-3xl: 1.875rem;
+            --text-4xl: 2.25rem;
+            --text-5xl: 3rem;
+            --text-6xl: 3.75rem;
+            
+            /* Spacing */
+            --space-1: 0.25rem;
+            --space-2: 0.5rem;
+            --space-3: 0.75rem;
+            --space-4: 1rem;
+            --space-5: 1.25rem;
+            --space-6: 1.5rem;
+            --space-8: 2rem;
+            --space-10: 2.5rem;
+            --space-12: 3rem;
+            --space-16: 4rem;
+            --space-20: 5rem;
+            --space-24: 6rem;
+            
+            /* Container */
+            --container-max: 1200px;
+        }
+
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            font-family: var(--font-primary);
+            font-size: var(--text-base);
+            line-height: 1.6;
+            color: var(--text-dark);
+            background: var(--bg-gradient);
+            min-height: 100vh;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }    
+    /* Typography */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-display);
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: var(--space-4);
+            color: var(--text-dark);
+        }
+
+        h1 { font-size: var(--text-5xl); }
+        h2 { font-size: var(--text-4xl); }
+        h3 { font-size: var(--text-2xl); }
+
+        p {
+            margin-bottom: var(--space-4);
+            color: var(--text-medium);
+            line-height: 1.7;
+        }
+
+        a {
+            color: var(--primary-blue);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        a:hover {
+            color: var(--secondary-blue);
+        }
+
+        /* Container */
+        .container {
+            max-width: var(--container-max);
+            margin: 0 auto;
+            padding: 0 var(--space-6);
+        }
+
+        /* Glassmorphism Card Component */
+        .glass-card {
+            background: var(--bg-glass);
+            backdrop-filter: var(--glass-backdrop);
+            -webkit-backdrop-filter: var(--glass-backdrop);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--radius-2xl);
+            box-shadow: var(--shadow-glass);
+        }
+
+        .glass-card-strong {
+            background: var(--bg-glass-strong);
+            backdrop-filter: var(--glass-backdrop);
+            -webkit-backdrop-filter: var(--glass-backdrop);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--radius-2xl);
+            box-shadow: var(--shadow-glass);
+        }
+
+        /* Section Styling */
+        section {
+            padding: var(--space-20) 0;
+            position: relative;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: var(--space-16);
+        }
+
+        .section-title h2 {
+            color: var(--text-dark);
+            margin-bottom: var(--space-4);
+            font-weight: 800;
+        }
+
+        .section-subtitle {
+            color: var(--text-medium);
+            font-size: var(--text-lg);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Navigation */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: var(--space-4) 0;
+            transition: var(--transition);
+        }
+
+        .navbar.scrolled {
+            background: var(--bg-glass);
+            backdrop-filter: var(--glass-backdrop);
+            -webkit-backdrop-filter: var(--glass-backdrop);
+            border-bottom: 1px solid var(--glass-border);
+            box-shadow: var(--shadow-glass);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo {
+            font-size: var(--text-xl);
+            font-weight: 800;
+            font-family: var(--font-display);
+            color: var(--primary-blue);
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: var(--space-8);
+        }
+
+        .nav-link {
+            color: var(--text-dark);
+            font-weight: 500;
+            padding: var(--space-3) var(--space-6);
+            border-radius: var(--radius-full);
+            transition: var(--transition);
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            background: var(--bg-glass);
+            color: var(--primary-blue);
+            backdrop-filter: var(--glass-backdrop);
+            border: 1px solid var(--glass-border);
+        }
+
+        /* Mobile Menu */
+        .nav-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            padding: var(--space-2);
+            border-radius: var(--radius-md);
+            background: var(--bg-glass);
+            backdrop-filter: var(--glass-backdrop);
+            border: 1px solid var(--glass-border);
+        }
+
+        .nav-toggle span {
+            width: 25px;
+            height: 3px;
+            background: var(--text-dark);
+            margin: 3px 0;
+            transition: var(--transition);
+            border-radius: 2px;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            padding-top: 100px;
+        }
+
+        .hero-content {
+            text-align: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-image {
+            margin-bottom: var(--space-8);
+        }
+
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin: 0 auto;
+            object-fit: cover;
+            border: 4px solid var(--white);
+            box-shadow: var(--shadow-xl);
+            transition: var(--transition);
+        }
+
+        .profile-img:hover {
+            transform: scale(1.05);
+            box-shadow: var(--shadow-glass);
+        }
+
+        .hero-title {
+            font-size: var(--text-6xl);
+            font-weight: 900;
+            margin-bottom: var(--space-4);
+            color: var(--text-dark);
+        }
+
+        .hero-subtitle {
+            font-size: var(--text-2xl);
+            font-weight: 600;
+            margin-bottom: var(--space-6);
+            color: var(--primary-blue);
+        }
+
+        .hero-description {
+            font-size: var(--text-lg);
+            max-width: 700px;
+            margin: 0 auto var(--space-10);
+            color: var(--text-medium);
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: var(--space-4) var(--space-10);
+            background: var(--primary-blue);
+            color: var(--white);
+            font-size: var(--text-lg);
+            font-weight: 600;
+            border-radius: var(--radius-full);
+            transition: var(--transition);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .cta-button:hover {
+            background: var(--secondary-blue);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-xl);
+            color: var(--white);
+        }
+
+        /* About Section */
+        .about {
+            position: relative;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-16);
+            align-items: start;
+        }
+
+        .about-text {
+            padding: var(--space-10);
+        }
+
+        .about-text h3 {
+            color: var(--text-dark);
+            margin-bottom: var(--space-6);
+            font-size: var(--text-3xl);
+        }
+
+        .skills-section {
+            padding: var(--space-10);
+        }
+
+        .skills-section h3 {
+            color: var(--text-dark);
+            margin-bottom: var(--space-8);
+            font-size: var(--text-3xl);
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--space-6);
+        }
+
+        .skill-card {
+            background: var(--bg-card);
+            padding: var(--space-6);
+            border-radius: var(--radius-xl);
+            border: 1px solid var(--glass-border);
+            transition: var(--transition);
+        }
+
+        .skill-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .skill-name {
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: var(--space-3);
+            font-size: var(--text-base);
+        }
+
+        .skill-bar {
+            width: 100%;
+            height: 8px;
+            background: rgba(79, 70, 229, 0.1);
+            border-radius: var(--radius-full);
+            overflow: hidden;
+        }
+
+        .skill-progress {
+            height: 100%;
+            background: linear-gradient(90deg, var(--primary-blue), var(--accent-purple));
+            border-radius: var(--radius-full);
+            transition: width 2s ease-in-out;
+            width: 0;
+        }
+
+        /* Projects Section */
+        .projects {
+            position: relative;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: var(--space-8);
+            margin-top: var(--space-16);
+        }
+
+        .project-card {
+            overflow: hidden;
+            transition: var(--transition);
+        }
+
+        .project-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .project-image {
+            position: relative;
+            overflow: hidden;
+            height: 250px;
+            border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+        }
+
+        .project-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .project-card:hover .project-image img {
+            transform: scale(1.1);
+        }
+
+        .project-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(79, 70, 229, 0.9);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: var(--transition);
+        }
+
+        .project-card:hover .project-overlay {
+            opacity: 1;
+        }
+
+        .project-links {
+            display: flex;
+            gap: var(--space-4);
+        }
+
+        .project-link {
+            padding: var(--space-3) var(--space-6);
+            background: var(--bg-glass);
+            backdrop-filter: var(--glass-backdrop);
+            color: var(--white);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--radius-full);
+            font-weight: 500;
+            transition: var(--transition);
+        }
+
+        .project-link:hover {
+            background: var(--bg-glass-strong);
+            transform: translateY(-2px);
+            color: var(--white);
+        }
+
+        .project-content {
+            padding: var(--space-8);
+            background: var(--bg-card);
+            border-radius: 0 0 var(--radius-xl) var(--radius-xl);
+        }
+
+        .project-title {
+            color: var(--text-dark);
+            margin-bottom: var(--space-3);
+            font-size: var(--text-xl);
+            font-weight: 700;
+        }
+
+        .project-description {
+            color: var(--text-medium);
+            margin-bottom: var(--space-6);
+            line-height: 1.6;
+        }
+
+        .project-tech {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--space-2);
+        }
+
+        .tech-tag {
+            padding: var(--space-2) var(--space-4);
+            background: var(--primary-blue);
+            color: var(--white);
+            border-radius: var(--radius-full);
+            font-size: var(--text-sm);
+            font-weight: 500;
+        }   
+     /* Video Gallery */
+        .video-gallery {
+            position: relative;
+        }
+
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: var(--space-8);
+            margin-top: var(--space-16);
+        }
+
+        .video-card {
+            overflow: hidden;
+            transition: var(--transition);
+        }
+
+        .video-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            height: 250px;
+            overflow: hidden;
+            border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+        }
+
+        .video-container video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .video-info {
+            padding: var(--space-8);
+            background: var(--bg-card);
+            border-radius: 0 0 var(--radius-xl) var(--radius-xl);
+        }
+
+        .video-title {
+            font-size: var(--text-lg);
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: var(--space-3);
+        }
+
+        .video-description {
+            color: var(--text-medium);
+            font-size: var(--text-base);
+        }
+
+        /* Contact Section */
+        .contact {
+            position: relative;
+        }
+
+        .contact-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-16);
+            margin-top: var(--space-16);
+        }
+
+        .contact-info {
+            padding: var(--space-10);
+        }
+
+        .contact-info h3 {
+            color: var(--text-dark);
+            margin-bottom: var(--space-8);
+            font-size: var(--text-3xl);
+        }
+
+        .contact-item {
+            margin-bottom: var(--space-6);
+            padding: var(--space-4);
+            background: var(--bg-card);
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--glass-border);
+        }
+
+        .contact-item strong {
+            color: var(--text-dark);
+            display: block;
+            margin-bottom: var(--space-2);
+            font-weight: 600;
+        }
+
+        .contact-item a {
+            color: var(--primary-blue);
+            font-weight: 500;
+        }
+
+        .contact-item span {
+            color: var(--text-medium);
+        }
+
+        .social-links {
+            margin-top: var(--space-8);
+            display: flex;
+            gap: var(--space-4);
+            flex-wrap: wrap;
+        }
+
+        .social-link {
+            padding: var(--space-3) var(--space-6);
+            background: var(--primary-blue);
+            color: var(--white);
+            border-radius: var(--radius-full);
+            font-weight: 500;
+            transition: var(--transition);
+        }
+
+        .social-link:hover {
+            background: var(--secondary-blue);
+            transform: translateY(-2px);
+            color: var(--white);
+        }
+
+        .contact-form {
+            padding: var(--space-10);
+        }
+
+        .contact-form h3 {
+            color: var(--text-dark);
+            margin-bottom: var(--space-8);
+            font-size: var(--text-3xl);
+        }
+
+        .form-group {
+            margin-bottom: var(--space-6);
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: var(--space-2);
+            font-weight: 600;
+            color: var(--text-dark);
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: var(--space-4);
+            border: 2px solid var(--glass-border);
+            border-radius: var(--radius-lg);
+            font-size: var(--text-base);
+            font-family: var(--font-primary);
+            transition: var(--transition);
+            background: var(--bg-card);
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary-blue);
+            box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: var(--space-4) var(--space-8);
+            background: var(--primary-blue);
+            color: var(--white);
+            border: none;
+            border-radius: var(--radius-full);
+            font-size: var(--text-lg);
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .submit-btn:hover {
+            background: var(--secondary-blue);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--bg-glass);
+            backdrop-filter: var(--glass-backdrop);
+            border-top: 1px solid var(--glass-border);
+            text-align: center;
+            padding: var(--space-12) 0;
+            margin-top: var(--space-20);
+        }
+
+        .footer p {
+            margin: 0;
+            color: var(--text-medium);
+        }
+
+        /* Scroll to Top */
+        .scroll-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background: var(--primary-blue);
+            color: var(--white);
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            transition: var(--transition);
+            z-index: 1000;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .scroll-top:hover {
+            background: var(--secondary-blue);
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .scroll-top.show {
+            display: flex;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            :root {
+                --text-6xl: 2.5rem;
+                --text-5xl: 2rem;
+                --text-4xl: 1.75rem;
+                --space-20: 3rem;
+                --space-16: 2.5rem;
+            }
+
+            .container {
+                padding: 0 var(--space-4);
+            }
+
+            .nav-toggle {
+                display: flex;
+            }
+
+            .nav-menu {
+                position: fixed;
+                top: 80px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 80px);
+                background: var(--bg-glass);
+                backdrop-filter: var(--glass-backdrop);
+                border: 1px solid var(--glass-border);
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                padding-top: var(--space-16);
+                gap: var(--space-6);
+                transition: left 0.3s ease;
+            }
+
+            .nav-menu.active {
+                left: 0;
+            }
+
+            .nav-link {
+                font-size: var(--text-lg);
+                padding: var(--space-4) var(--space-8);
+                width: 200px;
+                text-align: center;
+            }
+
+            .hero {
+                padding-top: 80px;
+                min-height: 90vh;
+            }
+
+            .profile-img {
+                width: 150px;
+                height: 150px;
+            }
+
+            .about-content,
+            .contact-content {
+                grid-template-columns: 1fr;
+                gap: var(--space-10);
+            }
+
+            .projects-grid,
+            .video-grid {
+                grid-template-columns: 1fr;
+                gap: var(--space-6);
+            }
+
+            .project-links {
+                flex-direction: column;
+                gap: var(--space-3);
+            }
+
+            .social-links {
+                justify-content: center;
+            }
+
+            .nav-toggle.active span:nth-child(1) {
+                transform: rotate(-45deg) translate(-5px, 6px);
+            }
+
+            .nav-toggle.active span:nth-child(2) {
+                opacity: 0;
+            }
+
+            .nav-toggle.active span:nth-child(3) {
+                transform: rotate(45deg) translate(-5px, -6px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .profile-img {
+                width: 120px;
+                height: 120px;
+            }
+
+            .hero-title {
+                font-size: var(--text-4xl);
+            }
+
+            .hero-subtitle {
+                font-size: var(--text-xl);
+            }
+
+            .glass-card,
+            .glass-card-strong {
+                padding: var(--space-6);
+            }
+        }
+
+        /* Animation Classes */
+        .animate-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .animate-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Skill Progress Animation */
+        .skill-card.animate .skill-progress[data-width="95%"] { width: 95%; }
+        .skill-card.animate .skill-progress[data-width="92%"] { width: 92%; }
+        .skill-card.animate .skill-progress[data-width="90%"] { width: 90%; }
+        .skill-card.animate .skill-progress[data-width="88%"] { width: 88%; }
+        .skill-card.animate .skill-progress[data-width="85%"] { width: 85%; }
+        .skill-card.animate .skill-progress[data-width="95%"] { width: 95%; }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="#home">Chandni Sharma</a>
+                </div>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#videos" class="nav-link">Videos</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="nav-toggle" id="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-image">
+                    <img src="https://storage.googleapis.com/creatorspace-public/users%2Fcmbfxal5z026zsc01z4oup7td%2FUWIFMjkQznQbqKQW-new-post-design-goal-1-.jpg" alt="Chandni Sharma - World-Class Graphic Designer" class="profile-img">
+                </div>
+                <h1 class="hero-title">Chandni Sharma</h1>
+                <h2 class="hero-subtitle">World-Class Graphic Designer</h2>
+                <p class="hero-description">
+                    Transforming brands into visual masterpieces with 3+ years of premium design expertise. 
+                    Specializing in luxury branding, sophisticated logo design, and compelling visual storytelling 
+                    that elevates businesses to extraordinary heights.
+                </p>
+                <a href="#contact" class="cta-button">Start Your Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Me</h2>
+                <p class="section-subtitle">
+                    Passionate designer dedicated to creating extraordinary visual experiences that transform brands and captivate audiences worldwide
+                </p>
+            </div>
+            <div class="about-content">
+                <div class="about-text glass-card-strong animate-in">
+                    <h3>My Creative Journey</h3>
+                    <p>
+                        I'm a world-class graphic designer with 3+ years of experience creating premium visual identities 
+                        and brand experiences that resonate globally. My expertise spans luxury branding, sophisticated 
+                        logo design, typography mastery, and strategic visual storytelling.
+                    </p>
+                    <p>
+                        Working with both digital and print mediums, I craft cohesive brand ecosystems that not only 
+                        look stunning but also drive measurable business results. Every design decision is strategic, 
+                        purposeful, and aligned with your brand's vision.
+                    </p>
+                    <p>
+                        My approach combines artistic excellence with business acumen, ensuring that every project 
+                        delivers both aesthetic beauty and commercial success.
+                    </p>
+                </div>
+                <div class="skills-section glass-card-strong animate-in">
+                    <h3>Premium Expertise</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-name">Premium Logo Design & Branding</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-name">Advanced Typography & Color Psychology</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="92%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-name">Luxury Digital & Print Design</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-name">Professional Video & Motion Graphics</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-name">Strategic Social Media Design</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-name">Brand Storytelling & Strategy</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-title">
+                <h2>Premium Portfolio</h2>
+                <p class="section-subtitle">
+                    Showcasing world-class design solutions that have transformed brands and delivered exceptional results across industries
+                </p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card glass-card animate-in">
+                    <div class="project-image">
+                        <img src="https://theblazeworld.com/wp-content/uploads/2025/04/Green-and-Yellow-Modern-T-shirt-Printing-Etsy-Shop-Cover-Website.jpg" alt="The Blaze World Premium T-shirt Design">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://theblazeworld.com" class="project-link">View Live</a>
+                                <a href="#" class="project-link">Case Study</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">The Blaze World - Premium T-shirt Design</h3>
+                        <p class="project-description">
+                            Modern and vibrant t-shirt design for premium Etsy marketplace, featuring contemporary typography, 
+                            strategic color psychology, and conversion-optimized visual hierarchy.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Premium Design</span>
+                            <span class="tech-tag">Etsy Optimization</span>
+                            <span class="tech-tag">Print Excellence</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card glass-card animate-in">
+                    <div class="project-image">
+                        <img src="https://www.houseofluxurylawns.com/uploads/banner/1757308160.jpeg" alt="House of Luxury Lawns Premium Branding">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://www.houseofluxurylawns.com" class="project-link">View Live</a>
+                                <a href="#" class="project-link">Portfolio</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">House of Luxury Lawns</h3>
+                        <p class="project-description">
+                            Sophisticated banner design for luxury fashion brand, emphasizing elegance, premium quality, 
+                            and aspirational lifestyle through strategic visual communication.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Luxury Branding</span>
+                            <span class="tech-tag">Fashion Design</span>
+                            <span class="tech-tag">Premium Quality</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card glass-card animate-in">
+                    <div class="project-image">
+                        <img src="https://storage.googleapis.com/creatorspace-public/users%2Fcmbfxal5z026zsc01z4oup7td%2Fb7ImJTcgADPO3GXj-1.jpg" alt="Premium Brand Identity Design">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">View Project</a>
+                                <a href="#" class="project-link">Behance</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Premium Brand Identity System</h3>
+                        <p class="project-description">
+                            Comprehensive brand identity featuring cutting-edge aesthetics, strategic visual hierarchy, 
+                            and cohesive design language that elevates brand perception.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Brand Identity</span>
+                            <span class="tech-tag">Logo Mastery</span>
+                            <span class="tech-tag">Visual Strategy</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card glass-card animate-in">
+                    <div class="project-image">
+                        <img src="https://storage.googleapis.com/creatorspace-public/users%2Fcmbfxal5z026zsc01z4oup7td%2Fbi2oOuMVHPw0SmHe-Brands-win-india-banner-2.jpg" alt="Brands Win India Competition Design">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">View Project</a>
+                                <a href="#" class="project-link">Awards</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Brands Win India - Competition Winner</h3>
+                        <p class="project-description">
+                            Award-winning banner design for national brand competition, incorporating patriotic elements 
+                            with contemporary design principles and strategic messaging.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Award Winner</span>
+                            <span class="tech-tag">Competition Design</span>
+                            <span class="tech-tag">National Recognition</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card glass-card animate-in">
+                    <div class="project-image">
+                        <img src="https://www.hummingo.co.in/uploads/banner/1745578726.jpg" alt="Hummingo E-commerce Excellence">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://www.hummingo.co.in" class="project-link">View Live</a>
+                                <a href="#" class="project-link">Results</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Hummingo - E-commerce Excellence</h3>
+                        <p class="project-description">
+                            High-converting e-commerce banner design that increased sales by 40% through strategic 
+                            visual hierarchy, compelling messaging, and conversion-optimized design elements.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">E-commerce</span>
+                            <span class="tech-tag">Conversion Design</span>
+                            <span class="tech-tag">Sales Growth</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card glass-card animate-in">
+                    <div class="project-image">
+                        <img src="https://storage.googleapis.com/creatorspace-public/users%2Fcmbfxal5z026zsc01z4oup7td%2FG4X9CBKNBtwuVMoZ-kapaday-Banner-1.jpg" alt="Kapaday Fashion Premium Design">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">View Project</a>
+                                <a href="#" class="project-link">Case Study</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Kapaday - Fashion Forward Design</h3>
+                        <p class="project-description">
+                            Contemporary fashion banner that captures the essence of modern style through vibrant visuals, 
+                            strategic typography, and trend-forward aesthetic appeal.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Fashion Forward</span>
+                            <span class="tech-tag">Trend Design</span>
+                            <span class="tech-tag">Visual Impact</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>    <!-- V
+ideo Gallery Section -->
+    <section id="videos" class="video-gallery">
+        <div class="container">
+            <div class="section-title">
+                <h2>Motion Excellence</h2>
+                <p class="section-subtitle">
+                    Premium video content and motion graphics that bring brands to life through dynamic storytelling and cinematic excellence
+                </p>
+            </div>
+            <div class="video-grid">
+                <div class="video-card glass-card animate-in">
+                    <div class="video-container">
+                        <video controls poster="">
+                            <source src="https://storage.googleapis.com/creatorspace-public/users%2Fcmbfxal5z026zsc01z4oup7td%2FpK85nqmaEan3kAot-Best%2520of%2520European%2520final%2520(1).mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="video-info">
+                        <h3 class="video-title">Best of European Design Excellence</h3>
+                        <p class="video-description">
+                            Cinematic showcase of European design aesthetics and contemporary visual trends, 
+                            featuring premium motion graphics and sophisticated storytelling techniques.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="video-card glass-card animate-in">
+                    <div class="video-container">
+                        <video controls poster="">
+                            <source src="https://storage.googleapis.com/creatorspace-public/users%2Fcmbfxal5z026zsc01z4oup7td%2FHAehQOffbnLruoPH-houseofluxurylawns.com.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="video-info">
+                        <h3 class="video-title">House of Luxury Lawns - Brand Film</h3>
+                        <p class="video-description">
+                            Premium brand presentation video showcasing luxury fashion through elegant cinematography, 
+                            sophisticated transitions, and compelling visual narrative.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="video-card glass-card animate-in">
+                    <div class="video-container">
+                        <video controls poster="">
+                            <source src="https://storage.googleapis.com/creatorspace-public/users%2Fcmbfxal5z026zsc01z4oup7td%2F4Ff3XzhGkIn621wD-Client%2520fun1%2520(1).mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="video-info">
+                        <h3 class="video-title">Creative Collaboration Journey</h3>
+                        <p class="video-description">
+                            Behind-the-scenes glimpse into the creative process, showcasing client collaboration, 
+                            design thinking, and the passion that drives exceptional results.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Let's Create Magic Together</h2>
+                <p class="section-subtitle">
+                    Ready to transform your brand with world-class design? Let's collaborate and create something extraordinary that sets you apart
+                </p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info glass-card-strong animate-in">
+                    <h3>Premium Design Services</h3>
+                    <div class="contact-item">
+                        <strong>Email:</strong>
+                        <a href="mailto:chandni.sharma.design@gmail.com">chandni.sharma.design@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Experience:</strong>
+                        <span>3+ Years of World-Class Design Excellence</span>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Specialization:</strong>
+                        <span>Premium Brand Identity & Luxury Visual Storytelling</span>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Premium Services:</strong>
+                        <span>Logo Design, Luxury Branding, Print & Digital Excellence, Motion Graphics</span>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Global Reach:</strong>
+                        <span>Serving Premium Clients Worldwide</span>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link">LinkedIn</a>
+                        <a href="#" class="social-link">Behance</a>
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Dribbble</a>
+                    </div>
+                </div>
+                <div class="contact-form glass-card-strong animate-in">
+                    <h3>Start Your Premium Project</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your full name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="project">Project Type</label>
+                            <input type="text" id="project" name="project" placeholder="Logo Design, Premium Branding, Motion Graphics, etc." required>
+                        </div>
+                        <div class="form-group">
+                            <label for="budget">Project Budget</label>
+                            <input type="text" id="budget" name="budget" placeholder="Your project budget range">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Project Vision</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell me about your brand vision, project goals, target audience, and how you want to transform your business through exceptional design..." required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Launch Premium Project</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Chandni Sharma. All rights reserved. Crafting world-class design experiences with passion and precision.</p>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">↑</button>
+
+    <script>
+        // DOM Content Loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile Navigation Toggle
+            const navToggle = document.getElementById('nav-toggle');
+            const navMenu = document.getElementById('nav-menu');
+            
+            navToggle.addEventListener('click', function() {
+                navToggle.classList.toggle('active');
+                navMenu.classList.toggle('active');
+            });
+
+            // Close mobile menu when clicking on a link
+            const navLinks = document.querySelectorAll('.nav-link');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    navToggle.classList.remove('active');
+                    navMenu.classList.remove('active');
+                });
+            });
+
+            // Smooth Scrolling for Navigation Links
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetSection = document.querySelector(targetId);
+                    
+                    if (targetSection) {
+                        const navbarHeight = document.getElementById('navbar').offsetHeight;
+                        const targetPosition = targetSection.offsetTop - navbarHeight;
+                        
+                        window.scrollTo({
+                            top: targetPosition,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+
+            // Navbar Scroll Effect
+            const navbar = document.getElementById('navbar');
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 100) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            });
+
+            // Active Navigation Link
+            window.addEventListener('scroll', function() {
+                const sections = document.querySelectorAll('section');
+                const navLinks = document.querySelectorAll('.nav-link');
+                
+                let current = '';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop - 200;
+                    if (window.scrollY >= sectionTop) {
+                        current = section.getAttribute('id');
+                    }
+                });
+
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === '#' + current) {
+                        link.classList.add('active');
+                    }
+                });
+            });
+
+            // Skills Animation on Scroll
+            const skillCards = document.querySelectorAll('.skill-card');
+            const animateSkills = function() {
+                skillCards.forEach(card => {
+                    const cardTop = card.getBoundingClientRect().top;
+                    const cardVisible = 200;
+                    
+                    if (cardTop < window.innerHeight - cardVisible) {
+                        card.classList.add('animate');
+                    }
+                });
+            };
+
+            window.addEventListener('scroll', animateSkills);
+            animateSkills(); // Run once on load
+
+            // Scroll to Top Button
+            const scrollTopBtn = document.getElementById('scrollTop');
+            
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 400) {
+                    scrollTopBtn.classList.add('show');
+                } else {
+                    scrollTopBtn.classList.remove('show');
+                }
+            });
+
+            scrollTopBtn.addEventListener('click', function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+
+            // Intersection Observer for animations
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -100px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, observerOptions);
+
+            // Observe elements for animation
+            const animateElements = document.querySelectorAll('.animate-in');
+            animateElements.forEach(el => {
+                observer.observe(el);
+            });
+
+            // Contact Form Handling
+            const contactForm = document.getElementById('contactForm');
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const submitBtn = contactForm.querySelector('.submit-btn');
+                const originalText = submitBtn.textContent;
+                
+                // Show loading state
+                submitBtn.textContent = 'Launching Your Project...';
+                submitBtn.disabled = true;
+
+                // Simulate form submission
+                setTimeout(() => {
+                    alert('🎨 Thank you! Your premium project brief has been received. I\'ll personally review your vision and get back to you within 12 hours. Let\'s create something extraordinary together!');
+                    contactForm.reset();
+                    
+                    // Reset button
+                    submitBtn.textContent = originalText;
+                    submitBtn.disabled = false;
+                }, 2000);
+            });
+
+            // Lazy loading for videos
+            const videos = document.querySelectorAll('video');
+            const videoObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const video = entry.target;
+                        video.load();
+                        videoObserver.unobserve(video);
+                    }
+                });
+            });
+
+            videos.forEach(video => {
+                videoObserver.observe(video);
+            });
+
+            // Keyboard navigation support
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && navMenu.classList.contains('active')) {
+                    navToggle.classList.remove('active');
+                    navMenu.classList.remove('active');
+                }
+            });
+
+            console.log('🎨✨ Chandni Sharma\'s Beautiful Portfolio loaded successfully!');
+        });
+    </script>
+</body>
+</html>
